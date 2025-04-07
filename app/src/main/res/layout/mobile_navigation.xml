@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.navigation.NavGraph
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/firstFragment">
+
+    <!-- Define your fragments here -->
+    <androidx.fragment.app.FragmentContainerView
+        android:id="@+id/firstFragment"
+        android:name="com.example.tooltracking.FirstFragment"
+        android:label="First Fragment"
+        tools:layout="@layout/fragment_first" />
+
+    <androidx.fragment.app.FragmentContainerView
+        android:id="@+id/secondFragment"
+        android:name="com.example.tooltracking.SecondFragment"
+        android:label="Second Fragment"
+        tools:layout="@layout/fragment_second" />
+
+    <!-- Add more fragments as needed -->
+</androidx.navigation.NavGraph>
